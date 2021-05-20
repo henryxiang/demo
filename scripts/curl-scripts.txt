@@ -1,0 +1,19 @@
+curl --request GET \
+  --url http://localhost:8080/users
+
+curl --request GET \
+  --url http://localhost:8080/user/1 \
+  --header 'Content-Type: application/json'
+
+curl --request POST \
+  --url http://localhost:8080/users \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"userId": "jimsmith",
+	"firstName": "Jim",
+	"lastName": "Smith",
+	"email": "jim@example.com"
+}'
+
+curl --request DELETE \
+  --url http://localhost:8080/user/3

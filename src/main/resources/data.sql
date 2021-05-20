@@ -1,0 +1,2 @@
+insert into users(user_id, first_name, last_name, email) values('demo', 'test', 'user', 'test@example.com');
+insert into users(user_id, first_name, last_name, email) values('admin', 'John', 'Doe', 'john@example.com');
